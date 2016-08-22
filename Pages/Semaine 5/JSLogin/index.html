@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Login</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+      var user = ["admin","badenis","denis"];
+      var pass = ["pass","12345","54321"];
+      var userInput;
+      var passInput;
+
+      var loginLogin = function(){
+        userInput = document.getElementById('userId').value;
+        passInput = document.getElementById('passId').value;
+        if (user.indexOf(userInput) !== pass.indexOf(passInput) || user.indexOf(userInput) == -1 || pass.indexOf(passInput) == -1 ){
+          document.getElementById('error').style.visibility = "visible";
+        }
+        else {
+          document.getElementById('homelog').style.animationName = "welcomeanim";
+          document.getElementById('error').style.animationName =  "fadeout";
+          document.getElementById('field').style.animationName = "fadeout";
+          document.getElementById('homelog').style.visibility = "visible";
+          document.getElementById('field').style.visibility = "hidden";
+          document.getElementById('clickme').style.visibility = "hidden";
+
+          setTimeout(function () {
+              window.location.href = "http://youtube.com";
+              }, 2000);
+        }
+      }
+    </script>
+<!-- jquery-->
+    <script src="jquery.js">
+    $(window).load(function() {
+  $("body").removeClass("preload");
+});
+    </script>
+  </head>
+
+  <body class="preload">
+    <div id="bluehue"></div>
+    <div id="homelog"></div>
+    <div id="fg"></div>
+    <button id="clickme"></button>
+    <div id="lineanim"></div>
+    <div class="bg">
+      <div class="cw" id="b1"><img src="bg/1.png"></div>
+      <div class="cccw" id="b2"><img src="bg/2.png"></div>
+      <div class="cw" id="b3"><img src="bg/3.png"></div>
+      <div class="cccw" id="b4"><img src="bg/4.png"></div>
+      <div class="cw" id="b5"><img src="bg/5.png"></div>
+      <div class="cccw" id="b6"><img src="bg/6.png"></div>
+      <div class="cw" id="b7"><img src="bg/7.png"></div>
+      <div class="cccw" id="b8"><img src="bg/8.png"></div>
+    </div>
+    <form class="content">
+      <fieldset id="field">
+      <div id="user"><input type="text" placeholder="Username" onfocus=this.placeholder="" id="userId"></div>
+      <div id="pass"><input type="password" placeholder="Password" onfocus=this.placeholder="" id="passId"></div>
+      <div id="passrem">Remember Me<input type="checkbox" name="passrem" checked></input></div>
+      <div id="login"><button type="submit" placeholder="Login" onclick="loginLogin(); return false">Login</button></div>
+      <div id="forgot"><a href = "forgot.html" target="_blank">Forgot Password ?</a></div>
+      <div id="error">Invalid login</div>
+    </fieldset>
+  </form>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CalculMental</title>
+    <script type="text/javascript">
+
+    var username = "joe@gmail.com";
+    var password = "12345";
+    var userask = prompt("Please enter your username:");
+    while (userask != username) {
+      if (userask.length < 10) {
+        userask = prompt("Login too short, try again:");
+      }
+      else if (userask.indexOf('@') < 1) {
+        userask = prompt("Login must be an email address, try again:");
+      }
+      else {
+        userask = prompt("Login incorrect,try again;");
+      }
+    }
+    var passask = prompt("Password:");
+    while (passask != password) {
+      if(passask.length < 5){
+        passask = prompt("Password too short, try again:");
+      }
+      else {
+        passask = prompt("Password incorrect, try again:");
+      }
+    }
+    alert("Welcome! Let's do some math!");
+
+//CALCUL MENTAL
+    var correct = 0;
+    var access = true;
+    while(correct < 3) {
+    var num1 = Math.round(Math.random() * 10);
+    //alert("First number is " + num1);
+    var num2 = Math.round(Math.random() * 10);
+    //alert("First number is " + num2);
+    var operator = ["+" , "-" , "*"];
+    var chosenop = operator[Math.floor(Math.random() * operator.length)];
+    //alert("Using the " + chosenop + " operator.");
+    var answer = eval(+num1 + chosenop + +num2 );
+    var myAnswer = prompt("How much is " + num1 + " " + chosenop + " " + num2 + " ?");
+    if(myAnswer == answer){
+      alert("Well done !");
+      correct ++ ;
+      alert("You now have " + correct + " points.");
+    }
+    else if (correct  < 0) {
+      alert("You lose.");
+      access = false;
+      break;
+    }
+    else {
+      alert("Nope! Minus one point.");
+      correct = correct - 1 ;
+      alert("You now have " + correct + " points.");
+    }
+  }
+  //PARTIE EXTRA
+  //alert("DEBUG");
+  while (access) {
+  var num1 = Math.round(Math.random() * 10);
+  var num2 = Math.round(Math.random() * 10);
+  var num3 = Math.round(Math.random() * 10);
+  var operator = ["+" , "-" , "*"];
+  var chosenop1 = operator[Math.floor(Math.random() * operator.length)];
+  var chosenop2 = operator[Math.floor(Math.random() * operator.length)];
+  var answer = eval(+num1 + chosenop1 + +num2 + chosenop2 + +num3 );
+  var myAnswer = prompt("BOSS QUESTION !! How much is " + num1 + " " + chosenop1 + " " + num2 + " " + chosenop2 + " " + num3 + " ?");
+  if(myAnswer == answer){
+    alert("Well done ! You win!");
+    correct ++;
+    break ;
+  }
+  else {
+    alert("No! So close...");
+    break;
+  }
+}
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

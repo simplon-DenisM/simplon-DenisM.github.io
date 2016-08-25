@@ -14,6 +14,23 @@ var changeTheme1 = function(){
   document.getElementById("video2").style.visibility = "hidden";
   document.getElementById("video3").style.visibility = "hidden";
   document.getElementById("video4").style.visibility = "hidden";
+  document.getElementById("completion").style.color = "white";
+  document.getElementsByClassName("detail")[0].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[0].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[1].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[1].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[2].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[2].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[3].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[3].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[4].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[4].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[5].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[5].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[6].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[6].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[7].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[7].style.color = "#2a2a2a";
 }
 
 var changeTheme2 = function(){
@@ -26,12 +43,29 @@ var changeTheme2 = function(){
   document.getElementById("theme3").style.borderColor = "#2dacff";
   document.getElementById("theme4").style.borderColor = "#2dacff";
   document.getElementsByTagName("body")[0].style.backgroundImage = "url('background2.png')";
-  document.getElementById("banner").style.color = "lightgrey";
+  document.getElementById("banner").style.color = "grey";
   soundChange();
   document.getElementById("video2").style.visibility = "visible";
   document.getElementById("videosmoke").style.visibility = "hidden";
   document.getElementById("video3").style.visibility = "hidden";
   document.getElementById("video4").style.visibility = "hidden";
+  document.getElementById("completion").style.color = "black";
+  document.getElementsByClassName("detail")[0].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[0].style.color = "white";
+  document.getElementsByClassName("detail")[1].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[1].style.color = "white";
+  document.getElementsByClassName("detail")[2].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[2].style.color = "white";
+  document.getElementsByClassName("detail")[3].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[3].style.color = "white";
+  document.getElementsByClassName("detail")[4].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[4].style.color = "white";
+  document.getElementsByClassName("detail")[5].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[5].style.color = "white";
+  document.getElementsByClassName("detail")[6].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[6].style.color = "white";
+  document.getElementsByClassName("detail")[7].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[7].style.color = "white";
 }
 
 var changeTheme3 = function(){
@@ -50,6 +84,23 @@ var changeTheme3 = function(){
   document.getElementById("video2").style.visibility = "hidden";
   document.getElementById("videosmoke").style.visibility = "hidden";
   document.getElementById("video4").style.visibility = "hidden";
+  document.getElementById("completion").style.color = "#fcff2d";
+  document.getElementsByClassName("detail")[0].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[0].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[1].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[1].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[2].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[2].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[3].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[3].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[4].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[4].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[5].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[5].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[6].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[6].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[7].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[7].style.color = "#19bbca";
 }
 
 var changeTheme4 = function(){
@@ -68,23 +119,25 @@ var changeTheme4 = function(){
   document.getElementById("video2").style.visibility = "hidden";
   document.getElementById("video3").style.visibility = "hidden";
   document.getElementById("videosmoke").style.visibility = "hidden";
+  document.getElementById("completion").style.color = "white";
+  document.getElementsByClassName("detail")[0].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[0].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[1].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[1].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[2].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[2].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[3].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[3].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[4].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[4].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[5].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[5].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[6].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[6].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[7].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[7].style.color = "#f0bf7a";
 }
 
-var chooseBG = function(){
-  var choice = Math.random();
-  if (choice < .25) {
-    changeTheme1();
-  }
-  else if (choice < .50) {
-    changeTheme2();
-  }
-  else if (choice < .75) {
-    changeTheme3();
-  }
-  else {
-    changeTheme4();
-  }
-}
 
 var soundPlay = function(){
   var sTp = document.getElementById("sound");
@@ -96,7 +149,7 @@ var soundChange = function(){
   sTp.play();
 }
 
-var completionPer = 15 ;
+var completionPer = 17 ;
 var currentPer = 0;
 var countUp = function(){
   document.getElementById("completion").innerHTML = "COMPLETION : " + currentPer + "%" ;
@@ -105,7 +158,7 @@ var countUp = function(){
 }
 
 var completionDisplay = function(){
-  chooseBG();
+  changeTheme1();
   var completion = completionPer * 0.95 ;
   document.getElementById("levelUp").style.width = completion + "vw";
   if(currentPer < completionPer + 1){
@@ -127,3 +180,13 @@ var themeHide = function(){
   document.getElementById("themeTitle").style.transform = "scaleX(0)";
   var sTp = document.getElementById("sound");
 }
+
+var setTime = function(){
+  var dateStart = new Date('2016-07-04 00:00:00');
+  var dateNow = new Date();
+  var timeDifference = dateNow - dateStart ;
+  timeDifference = parseInt(timeDifference/(1000*60*60*24*7));
+  document.getElementById("week").innerHTML = "WEEK " + (timeDifference + 1).toString() ;
+}
+
+setTime();

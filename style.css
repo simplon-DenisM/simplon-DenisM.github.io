@@ -206,20 +206,32 @@ span {
   z-index: 1;
 }
 
-#prev {
+.prev {
   height: 230px;
   width: 300px;
-  background-color: white;
   position: absolute;
   margin: 85px 0;
   transition: all .3s ease-in-out;
   z-index: 2;
+  background-size: cover;
 }
 
-#container:hover .detail , #container:hover #prev {
+#container:hover .detail , #container:hover .prev {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-#container:hover #prev {
+#container:hover .prev {
   transform: scale(1.2);
+}
+
+#img1 {
+  background-image: url("icons/site1.png");
+}
+
+#img2 {
+  background-image: url("icons/site2.png");
+}
+
+#img3 {
+  background-image: url("icons/site3.png");
 }

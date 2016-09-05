@@ -2,43 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>HOMEPAGE</title>
-    <link rel="stylesheet" href="style.css" type="text/css"> <!-- stylefile -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> <!--week font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!-- hubfont -->
-    <link rel="icon" href="icon.png" type="icon/png">
+    <title>Web Design Inspiration</title>
+    <link rel="stylesheet" type="text/css" href="style.css"\>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatica+SC' rel='stylesheet' type='text/css'>
+    <link href="icons/favicon.png" type = "image/png" rel="icon">
+    <!--<script src="jquery-1.12.4.min.js"></script>-->
   </head>
-  <body onload="completionDisplay()">
+  <body>
+    <div class="navbar"><ul><a href="index.html">Home:You are here!</a>
+                            <a href="#BOTTOM">About</a>
+                            <a href="contact.html">Contact</a></ul></div>
+    <div class="tuto"><p>Click the button to view <br>the presentation<br><span style="font-size:10vh;">&#8594;</span></p>
+    </div>
+    <audio ><source src="bgsound.mp3" type="audio/mp3"/></audio>
+    <div id="soundbox"><img src="icons/sound.png"/></div>
+    <div id="foreg"><svg height="110vh" width="3vw" xmlns="http://www.w3.org/2000/svg"><line x1="1vw" y1="-100vh" x2="1vw" y2="110vh" id="leftLine"/></svg></div>
+    <div class="hotbar"><ul><a href="#part1"><div id="animid"><li>1</li></div></a>
+                            <a href="#part2"><div id="animid"><li>2</li></div></a>
+                            <a href="#part3"><div id="animid"><li>3</li></div></a>
+                        </ul>
+    </div>
+    <div id="title">Top 5 Website Designs</div>
+    <div id="subtitle">Expertly chosen by <u>Denis Muresan</u></div>
+    <svg height="25vh" width="98vw"><line x1=".7vw" y1="20vh" x2="99vw" y2="2vh" id="leftLine"/></svg>
+    <div class="button_container_left" style="margin-top:-5vh;">
+      <a name="part1" href="page1.html" id="btsel" ><img  src="icons/icon.png"></a>
+      <p>Pleasure to Burn<br><a id="outlink" href="http://www.pleasuretoburn.com/" target="_blank">&#8594;Click Here to Visit this Site!&#8592;</a></p>
+    </div>
+    <div class="button_container_right">
+      <a name="part2" href="page2.html" id="btsel"><img src="icons/icon2.png"\></a>
+      <p>Supremo Type Terms<br><a id="outlink" href="https://www.supremo.tv/typeterms/" target="_blank">&#8594;Click Here to Visit this Site!&#8592;</a></p>
+    </div>
+    <div class="button_container_left">
+      <a name="part3" href="page3.html" id="btsel"><img src="icons/icon3.png"\></a>
+      <p>Action contre le Faim -Bangui L'oubliée<br><a id="outlink" href="http://www.bangui-loubliee.com/" target="_blank">&#8594;Click Here to Visit this Site!&#8592;</a></p>
+    </div>
+    <div id="about"><a name="BOTTOM">About : Stuff and details blah blah blah &#169; Denis M 2015</a></div>
+    <svg height="25vh" width="98vw"><line x1=".7vw" y1="2vh" x2="99vw" y2="20vh" id="leftLine"/>
 
-    <audio id="sound"><source src="sound.mp3" type="audio/mp3"></audio>
-    <audio id="soundChange"><source src="soundChange.mp3" type="audio/mp3"></audio>
-
-    <video id="videosmoke" autoplay muted loop><source src="videosmoke.mp4" type="video/mp4"></video>
-    <video id="video2" autoplay muted loop><source src="video2.mp4" type="video/mp4"></video>
-    <video id="video3" autoplay muted loop><source src="video3.mp4" type="video/mp4"></video>
-    <video id="video4" autoplay muted loop><source src="video4.mp4" type="video/mp4"></video>
-
-    <div id="banner"><span> _. </span>THE HUB</div>
-    <div id="bannerSub"></div>
-    <div id="week">WEEK </div>
-    <div id="levelbar"></div>
-    <div id="levelUp"></div>
-    <div id="completion">COMPLETION</div>
-
-    <div id="badassContainer">
-      <div id="container"><div class="detail" style="top:0">ROCK PAPER SCISSORS</div><a href="rps.zip" target="_blank"><div class="prev" id="img1"></div></a><div class="detail" style="bottom:0">HTML CSS JS</div></div>
-      <div id="container"><div class="detail" style="top:0">COUNTRY QUIZ</div><a href="countries.zip" target="_blank"><div class="prev" id="img2"></div></a><div class="detail" style="bottom:0">HTML CSS JS</div></div>
-      <div id="container"><div class="detail" style="top:0">WEB DESIGN INSPIRATION</div><a href="inspiration.zip" target="_blank"><div class="prev" id="img3"></div></a><div class="detail" style="bottom:0">HTML CSS</div></div>
-      <div id="container"><div class="detail" style="top:0">WEB DESIGN INSPIRATION</div><a href="pages/inspiration/index.html" target="_blank"><div class="prev" id="img-"></div></a><div class="detail" style="bottom:0">HTML CSS</div></div>
-  </div>
-
-    <div class="themeButton" id="theme1" onmouseover="changeThemeName('Hexa-Smoke')" onmouseout="themeHide()" onclick="changeTheme1()"></div>
-    <div class="themeButton" id="theme2" onmouseover="changeThemeName('Relaxaura')" onmouseout="themeHide()" onclick="changeTheme2()"></div>
-    <div class="themeButton" id="theme3" onmouseover="changeThemeName('Tropic Over')" onmouseout="themeHide()" onclick="changeTheme3()"></div>
-    <div class="themeButton" id="theme4" onmouseover="changeThemeName('Molten Golden')" onmouseout="themeHide()" onclick="changeTheme4()"></div>
-    <div id="themeTitle">EXAMPLE</div>
-
-
-    <script src="script.js"></script>
   </body>
 </html>

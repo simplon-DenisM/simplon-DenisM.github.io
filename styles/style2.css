@@ -20,7 +20,8 @@ hr{
   position: fixed;
   left : 3vh;
   top : 3vh;
-  z-index: 100
+  z-index: 100;
+  transition: all .3s ease-in-out;
 }
 #title span{
   color: #87D3EE;
@@ -37,6 +38,7 @@ hr{
   position: fixed;
   right: 9vh;
   top: 3vh;
+  transition: all .3s ease-in-out;
 }
 #ofl:hover{
   color: #87D3EE;
@@ -48,6 +50,7 @@ hr{
   height: 80vh;
   margin: 0vh 10vw 0vh 20vw;
   padding-top: 10vh;
+  transition: all .3s ease-in-out;
 }
 .container img{
   width: 59.7vw;
@@ -71,6 +74,7 @@ hr{
   position: fixed;
   bottom: 3vh;
   left: 4vh;
+  transition: all .3s ease-in-out;
 }
 #back:hover{
   color: #87D3EE;

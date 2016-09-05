@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
     <link href="icons/favicon.png" type = "image/png" rel="icon">
   </head>
-  <body>
+  <body onload=init()>
     <div id="title">TYPE<hr><span>TERMS</span></div>
     <a id="ofl" href="https://www.supremo.tv/typeterms/" target="_blank">Click here to see the site!</a>
     <div class="container">
@@ -30,9 +30,20 @@
       <img id="image3" src="screens/site23.png"/>
       <p>ENG : Overall the site is good looking and more than functional. I haven't found a single fault with it and it shows
       how far simplicity can go.<br>FR : <i>En general le site est bien fait et functionel. J'ai pas encore trouvé des
-    problemes et on peut voir que la simplicité est :::add stuff here:::</i></p>
+    problemes et on peut voir que la simplicité est parfois le meilleur choix !</i></p>
     </div>
     <div class="buttons"><img id="left" src="icons/left.png"/><img id="right" src="icons/right.png"/></div>
     <a id="back" href="index.html">&#8592;</a>
+    <script>
+    function init(){
+      window.addEventListener('wheel', ptitimwashere);
+    }
+      function ptitimwashere(event){
+        console.log(event);
+        var actu = window.scrollX;
+        var plus = event.wheelDelta;
+        window.scrollTo(actu - plus,0);
+      }
+    </script>
   </body>
 </html>

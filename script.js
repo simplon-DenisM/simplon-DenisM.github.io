@@ -31,6 +31,10 @@ var changeTheme1 = function(){
   document.getElementsByClassName("detail")[6].style.color = "#2a2a2a";
   document.getElementsByClassName("detail")[7].style.backgroundColor = "#ff7e2a";
   document.getElementsByClassName("detail")[7].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[8].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[8].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[9].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[9].style.color = "#2a2a2a";
 }
 
 var changeTheme2 = function(){

@@ -70,6 +70,10 @@ var changeTheme2 = function(){
   document.getElementsByClassName("detail")[6].style.color = "white";
   document.getElementsByClassName("detail")[7].style.backgroundColor = "#2dacff";
   document.getElementsByClassName("detail")[7].style.color = "white";
+  document.getElementsByClassName("detail")[8].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[8].style.color = "white";
+  document.getElementsByClassName("detail")[9].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[9].style.color = "white";
 }
 
 var changeTheme3 = function(){
@@ -105,6 +109,10 @@ var changeTheme3 = function(){
   document.getElementsByClassName("detail")[6].style.color = "#19bbca";
   document.getElementsByClassName("detail")[7].style.backgroundColor = "#fcff2d";
   document.getElementsByClassName("detail")[7].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[8].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[8].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[9].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[9].style.color = "#19bbca";
 }
 
 var changeTheme4 = function(){
@@ -140,6 +148,10 @@ var changeTheme4 = function(){
   document.getElementsByClassName("detail")[6].style.color = "#f0bf7a";
   document.getElementsByClassName("detail")[7].style.backgroundColor = "#4c4a48";
   document.getElementsByClassName("detail")[7].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[8].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[8].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[9].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[9].style.color = "#f0bf7a";
 }
 
 

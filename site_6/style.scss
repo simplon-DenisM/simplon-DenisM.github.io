@@ -1,0 +1,22 @@
+$backcolor : #FFCE5F ;
+$contentcolor : #FFA121 ;
+$fontcolor : #24211C ;
+$fontstyle :  'PT Sans' ;
+
+body {
+  background-color: $backcolor ;
+  color: $fontcolor ;
+  font-family: $fontstyle ;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h4 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}

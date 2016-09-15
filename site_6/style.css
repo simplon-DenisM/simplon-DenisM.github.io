@@ -1,0 +1,14 @@
+body {
+  background-color: #FFCE5F;
+  color: #24211C;
+  font-family: "PT Sans"; }
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline; }
+
+h4 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold; }

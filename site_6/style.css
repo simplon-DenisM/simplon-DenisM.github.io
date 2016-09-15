@@ -1,7 +1,8 @@
 body {
   background-color: #FFCE5F;
-  color: #24211C;
-  font-family: "PT Sans"; }
+  color: #443624;
+  font-family: "PT Sans";
+  overflow-x: hidden; }
 
 h1 {
   font-size: 50px;
@@ -12,3 +13,28 @@ h4 {
   padding-top: 20px;
   text-align: center;
   font-weight: bold; }
+
+h2, h3 {
+  text-decoration: underline;
+  padding-left: 20px; }
+
+p {
+  font-size: 15px;
+  padding-left: 20px; }
+
+a {
+  color: #FF3737; }
+
+hr {
+  background-color: #443624;
+  height: 2px;
+  border: none; }
+
+.container {
+  border-radius: 30px;
+  background-color: #FFA121;
+  width: 75vw;
+  margin: 50px 0; }
+
+.right {
+  margin-left: 23vw; }

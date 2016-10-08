@@ -39,6 +39,10 @@ var changeTheme1 = function(){
   document.getElementsByClassName("detail")[10].style.color = "#2a2a2a";
   document.getElementsByClassName("detail")[11].style.backgroundColor = "#ff7e2a";
   document.getElementsByClassName("detail")[11].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[12].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[12].style.color = "#2a2a2a";
+  document.getElementsByClassName("detail")[13].style.backgroundColor = "#ff7e2a";
+  document.getElementsByClassName("detail")[13].style.color = "#2a2a2a";
 }
 
 var changeTheme2 = function(){
@@ -82,6 +86,10 @@ var changeTheme2 = function(){
   document.getElementsByClassName("detail")[10].style.color = "white";
   document.getElementsByClassName("detail")[11].style.backgroundColor = "#2dacff";
   document.getElementsByClassName("detail")[11].style.color = "white";
+  document.getElementsByClassName("detail")[12].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[12].style.color = "white";
+  document.getElementsByClassName("detail")[13].style.backgroundColor = "#2dacff";
+  document.getElementsByClassName("detail")[13].style.color = "white";
 }
 
 var changeTheme3 = function(){
@@ -125,6 +133,10 @@ var changeTheme3 = function(){
   document.getElementsByClassName("detail")[10].style.color = "#19bbca";
   document.getElementsByClassName("detail")[11].style.backgroundColor = "#fcff2d";
   document.getElementsByClassName("detail")[11].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[12].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[12].style.color = "#19bbca";
+  document.getElementsByClassName("detail")[13].style.backgroundColor = "#fcff2d";
+  document.getElementsByClassName("detail")[13].style.color = "#19bbca";
 }
 
 var changeTheme4 = function(){
@@ -168,6 +180,10 @@ var changeTheme4 = function(){
   document.getElementsByClassName("detail")[10].style.color = "#f0bf7a";
   document.getElementsByClassName("detail")[11].style.backgroundColor = "#4c4a48";
   document.getElementsByClassName("detail")[11].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[12].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[12].style.color = "#f0bf7a";
+  document.getElementsByClassName("detail")[13].style.backgroundColor = "#4c4a48";
+  document.getElementsByClassName("detail")[13].style.color = "#f0bf7a";
 }
 
 
@@ -181,7 +197,7 @@ var soundChange = function(){
   sTp.play();
 }
 
-var completionPer = 17 ;
+var completionPer = 65 ;
 var currentPer = 0;
 var countUp = function(){
   document.getElementById("completion").innerHTML = "COMPLETION : " + currentPer + "%" ;

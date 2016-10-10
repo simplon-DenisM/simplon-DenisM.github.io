@@ -58,3 +58,23 @@ function createArtist(i){
 for (var i = 0 ; i <= artistList.length -1; i++) {
   createArtist(i);
 }
+
+//CHECK PAGE LOCATION
+
+
+function checkPage() {
+  var pageLocation = window.location.hash ;
+  $("#galleryPage").hide(0);
+  $("#aboutPage").hide(0);
+  $("#devlogPage").hide(0);
+  if (pageLocation == "#about"){
+    selectAbout();
+    console.log("something");
+  }
+  else if (pageLocation == "#devlog") {
+    selectDevlog();
+  }
+  else {
+    selectGallery();
+  }
+}

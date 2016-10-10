@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+}
+
 #navSeparator {
   background-color: $navcolor ;
   height: 20px;
@@ -49,7 +53,10 @@ nav {
   }
   p:hover{
     cursor: pointer;
-
+  }
+  a {
+    text-decoration: none;
+    color : $fontcolor;
   }
   #selector{
     background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(255, 255, 255, 0.7));
@@ -66,6 +73,10 @@ nav {
 }
 
 // CONTENT
+
+.pageContainer {
+  margin-bottom: 10vh;
+}
 
 #galleryPage , #aboutPage , #devlogPage {
   margin-top: 140px;
@@ -105,4 +116,58 @@ nav {
   height: 160px;
   font-size: 1.25em;
   line-height: 365px;
+}
+
+.para {
+  background-color: $fontcolor;
+  color: white;
+  font-family: $font1;
+  font-size: 1.3em;
+  width: 75vw;
+  margin-left: 12.5vw;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 60px;
+  span {
+    float: right;
+  }
+}
+
+.date , .event {
+  background-color: $fontcolor;
+  font-family: $font1;
+  font-size: 1.2em;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dateContainer {
+  width: 75vw;
+  margin-left: 12.5vw;
+  clear: both;
+}
+.spaceB{
+  background-color: $fontcolor;
+  width: .5vw;
+  margin-left: 49.25vw;
+  height: 20vh;
+}
+
+//CREATION PAGE CONTENT
+
+#imageZone{
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin: 200px;
+  
+}
+
+#imageResizer{
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  position: absolute;
 }

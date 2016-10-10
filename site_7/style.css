@@ -2,6 +2,9 @@ body {
   margin: 0;
   overflow-x: hidden; }
 
+a {
+  text-decoration: none; }
+
 #navSeparator {
   background-color: #cdcdcd;
   height: 20px;
@@ -31,6 +34,9 @@ nav {
     line-height: 20px; }
   nav p:hover {
     cursor: pointer; }
+  nav a {
+    text-decoration: none;
+    color: #565656; }
   nav #selector {
     background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.7));
     pointer-events: none;
@@ -41,6 +47,9 @@ nav {
       margin-top: 20px;
       background-color: #cdcdcd;
       height: 3px; }
+
+.pageContainer {
+  margin-bottom: 10vh; }
 
 #galleryPage, #aboutPage, #devlogPage {
   margin-top: 140px;
@@ -76,5 +85,50 @@ nav {
   height: 160px;
   font-size: 1.25em;
   line-height: 365px; }
+
+.para {
+  background-color: #565656;
+  color: white;
+  font-family: "Abel", sans-serif;
+  font-size: 1.3em;
+  width: 75vw;
+  margin-left: 12.5vw;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 60px; }
+  .para span {
+    float: right; }
+
+.date, .event {
+  background-color: #565656;
+  font-family: "Abel", sans-serif;
+  font-size: 1.2em;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around; }
+
+.dateContainer {
+  width: 75vw;
+  margin-left: 12.5vw;
+  clear: both; }
+
+.spaceB {
+  background-color: #565656;
+  width: .5vw;
+  margin-left: 49.25vw;
+  height: 20vh; }
+
+#imageZone {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin: 200px; }
+
+#imageResizer {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  position: absolute; }
 
 /*# sourceMappingURL=style.css.map */

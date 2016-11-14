@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CodeArena</title>
+    <script type="text/javascript">
+      alert('Welcome to CodeArena!');
+
+      alert('Lets do a some simple math');
+      var operation = prompt("Choose a simple function + - * / ");
+      var num1 = prompt("Choose the first number");
+      var num2 = prompt("Choose the second number");
+      switch (operation) {
+        case ("+"):
+        var result = +num1 + +num2;
+        alert (result);
+        break;
+
+        case ("-"):
+        var result = +num1 - +num2;
+        alert (result);
+        break;
+
+        case ("/"):
+        var result = +num1 / +num2;
+        alert (result);
+        break;
+
+        case ("*"):
+        var result = +num1 * +num2;
+        alert (result);
+        break;
+
+        default:
+        alert("Error");
+
+      }
+      alert('Here comes the horse question...');
+
+      var reponseQuestion1 = prompt("What color was Henry the 4th's horse?");
+              if(reponseQuestion1.toLowerCase() == "white"){
+              alert('Nice one.');
+              var reponseQuestion2 = prompt('How many were the seven dwarves ?');
+              if(reponseQuestion2 == parseInt(7,36) ){
+                  alert('Well,duh!');
+              }
+              else if (reponseQuestion2.toLowerCase() == "seven") {
+                  alert('Yup...');
+              }
+              else {
+                  alert('Nuh uh,wrong.');
+                  var reponseQuestion2 = prompt('Try again !');
+                  if(reponseQuestion2 == parseInt(7,36) ){
+                      alert('Well,duh!');
+                  }
+                  else if (reponseQuestion2.toLowerCase() == "seven") {
+                      alert('Yup...');
+                  }
+              }
+          }
+           else {
+              alert('Nuh uh,wrong.');
+              var reponseQuestion1 = prompt("What color was Henry the 4th's horse?");
+              if(reponseQuestion1.toLowerCase() == "white"){
+                  alert('Nice one.');}
+              else {
+                alert('Wrong!');
+              }
+}
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

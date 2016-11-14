@@ -1,0 +1,73 @@
+body{
+  background-image: linear-gradient(#DAF7A6,#FFC300);
+}
+h1{
+  float: left;
+position: relative;
+color: #900C3F;
+font-size: 500%;
+font-family: fantasy;
+font-style: oblique;
+text-shadow: 2px 2px #581845;
+box-shadow: 3px 3px #581845;
+margin: 80px 20px 0 60px ;
+padding: 20px;
+border: 10px solid #900C3F ;
+border-radius: 6px;
+background-image: linear-gradient(#C70039,#FF5733);
+}
+#banner{
+  text-align: left;
+  position: relative;
+  width: 50% ;
+}
+h2{
+  float: left;
+  color: #900C3F;
+  font-size: 150%;
+  padding: 10px;
+  font-family: fantasy;
+  font-weight: lighter;
+  font-style: oblique;
+  text-align: center;
+  margin-left: 280px;
+  text-decoration: underline;
+  background-image: linear-gradient(#FF5733,#FFC300);
+  border-radius: 300px;
+  box-shadow:  3px 0 #581845 , 0 3px #581845 ,-3px 0 #581845 , 0 -3px #581845 ;
+}
+table{
+  position: static;
+  box-shadow: 4px 4px 5px #581845  ;
+ margin-left: 200px;;
+ margin-bottom: 100px;
+  margin-top: 100px;
+  border: 4px solid #581845 ;
+  border-radius: 3px;
+}
+td{
+  text-shadow: 2px 2px 2px black ;
+  border-radius: 2px ;
+  border : 4px solid #900C3F ;
+  text-align: center;
+  font-size: 200%;
+  font-family: fantasy;
+  padding: 20px 50px 20px 50px ;
+}
+.row {
+background-color: #FF5733;
+color : #FFC300 ;
+}
+#frow {
+background-color: #C70039;
+color: #DAF7A6;
+}
+.yum{
+font-size: 150%;
+color: #FF6416;
+}
+.bg{
+  background-repeat: repeat;
+  background-image: url(fruitimage3.jpg);
+  padding-bottom: 200px;
+}

@@ -1,0 +1,97 @@
+body {
+  background-color: grey;
+}
+.card{
+margin: 5% 20% 1% 20% ;
+background-image: linear-gradient(white,#bababa);
+ font-family: sans-serif;;
+border-radius: 30px;
+color: grey;
+box-shadow: 2px 2px 5px black ;
+}
+#den{
+  font-size: 150%;
+  padding-right: 40px;
+}
+#name{
+  margin-left: 20px;
+  padding-top: 40px;
+  font-size: 300%;
+  text-align: left;
+  text-shadow: 2px 2px 2px #474747 ;
+}
+#wd{
+text-decoration: underline;
+ font-size: 150%;
+ text-align: left;
+ margin-left: 20px;
+}
+#wd:hover{
+  color: #FFF44C;
+}
+#pro{
+font-size: 130%;
+margin-left: 20px;
+text-align : left;
+}
+#pro:hover{
+  color: #FFF44C;
+}
+#num{
+font-size: 120%;
+margin-right: 20px;
+text-align: right;
+}
+#num:hover{
+  color: #FFF44C;
+}
+#mail{
+  font-size: 120%;
+margin-right: 20px;
+text-align: right;
+text-decoration: underline;
+padding-bottom: 20px;
+}
+#mail:hover{
+  color: #FFF44C;
+}
+a{
+    color: grey;
+}
+a:hover{
+  color: #FFF44C;
+}
+
+#logo{
+text-shadow: 2px 2px 2px #black;
+font-size: 200%;
+color: white;
+margin-right: 40px;
+float: right;
+padding: 20px;
+background-color: #474747;
+border-radius: 5px;
+box-shadow : 2px 2px 2px #474747;
+}
+#logo:hover{
+  background-color: #FFF44C;
+}
+#info{
+text-align: center;
+color: white;
+font-size: 200%;
+font-family: serif;
+font-weight: bolder;
+background-color: #474747;
+border-radius: 600px;
+margin: 1% 48% 40% 48%;
+}
+#info:hover{
+background-color: #FFF44C;
+}
+#gold:hover{
+  color: #FFF44C;
+}
+span {
+  margin: -5px;
+}

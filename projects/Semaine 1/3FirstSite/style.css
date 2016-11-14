@@ -1,0 +1,71 @@
+#menubar{
+  margin:auto;
+  text-align: center;
+  border: 5px solid white ;
+  box-shadow: 2px 2px silver;
+
+}
+#buttons{
+  display: inline-flex;
+  color: white;
+  font-size: 40px;
+  padding: 0 25px 0 25px;
+  font-family: "Oswald",sans-serif;;
+}
+#buttons:hover{
+  color : #605F4D;
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background-image: url(brushicon.jpg);
+  background-size: 100%;
+}
+body{
+  background-image: url(bg.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+#blank{
+  opacity : 0 ;
+  padding: 20px;
+}
+#img{
+  display: inline;
+  float: left;
+}
+#project{
+  font-family: "Droid Sans",sans-serif;;
+  overflow: auto;
+  font-size: 38px;
+  color: white;
+  padding-left: 25px;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+#project2{
+  font-family: "Droid Sans",sans-serif;;
+  overflow: auto;
+  font-size: 27px;
+  color: white;
+  padding-left: 25px;
+}
+#lorem{
+  margin-left: 25px;
+  font-family: "Open Sans Condensed",sans-serif;;
+  overflow: auto;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+}
+#overflow{
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#decos{
+  margin-left:50%;
+  margin-bottom: -5px;
+}
+#topline{
+  margin-top: 0px;
+}

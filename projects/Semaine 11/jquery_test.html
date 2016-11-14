@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery Lesson</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Hide this on click ! </h1>
+    <p class="pchange">This becomes red on enter and green on leave ! </p>
+    <p class="pchange">Some more to test ! </p>
+    <p class="pchange">Just some more content ! </p>
+    <button>Click me for function fun time !</button>
+  </body>
+  <script>
+
+  $("button").click(function(){
+    $("h1").fadeToggle();
+    $(this).parent().css({"background-color" : "black"});
+  });
+
+  $(".pchange").mouseenter(function(){
+    $(this).css({"color" : "red"});
+  });
+  $(".pchange").mouseleave(function(){
+    $(this).css({"color" : "green" , "font-size" : "20px"});
+  });
+  </script>
+</html>

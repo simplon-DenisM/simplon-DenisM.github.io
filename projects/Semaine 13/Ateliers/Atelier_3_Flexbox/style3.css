@@ -1,0 +1,39 @@
+body {
+  margin:0px;
+}
+.menu{
+  height: 60px;
+  background-color: #EEE;
+  display: flex;
+  align-items: center; ;
+  justify-content:space-around; ;
+  flex-wrap: wrap ;
+
+}
+
+.images {
+
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: space-between; ;
+}
+
+.images2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.images3 {
+    display: flex;
+    justify-content:center; ;
+    align-items: center; ;
+}
+
+.LeFooter {
+  height: 60px;
+  background-color: #EEE;
+  display: flex;
+  align-items: center; ;
+  justify-content: center; ;
+  flex-wrap: wrap ;
+}

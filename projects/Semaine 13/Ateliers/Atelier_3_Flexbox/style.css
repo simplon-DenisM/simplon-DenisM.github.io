@@ -1,0 +1,32 @@
+body {
+  margin : 0;
+}
+.ImageRed {
+  display: flex;
+  flex-direction:  row;
+  flex-wrap: wrap ;
+  justify-content: center;
+}
+
+.ImagePurple {
+  display: flex;
+  justify-content: space-between; ;
+}
+
+.ImageBlue {
+  display: flex;
+  justify-content: space-around; ;
+  padding: 20px;
+}
+
+.ImageYellow {
+  display: flex;
+  justify-content: center; ;
+  align-items: center; ;
+}
+
+#yellowbox {
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+}

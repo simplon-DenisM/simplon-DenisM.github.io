@@ -1,0 +1,25 @@
+p {
+  color: blue ;
+  font-size: 10px;
+
+}
+
+#block1 {
+  height: 500px;
+  background-color: red;
+  transition: all 2s ease-in-out ;
+}
+
+#block1:hover {
+  transform: rotateX(-180deg);
+}
+
+.info {
+  background-color: green;
+  border-radius: 0;
+  transition: all 2s ease-in-out;
+}
+
+.info:hover {
+  transform: rotateY(180deg);
+}

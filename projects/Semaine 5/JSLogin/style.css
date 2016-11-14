@@ -1,0 +1,329 @@
+.preload{
+  transition: none ;
+}
+
+#homelog{
+  position: absolute;
+  height: 7vw;
+  width: 7vw;
+  left: 0.25vw;
+  top : 0;
+  margin: 42vh 46.25vw;
+  background-image: url("bg/welcome.png");
+  background-size: contain;
+  visibility: hidden;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes welcomeanim {
+    0%{transform: rotate(-360deg);
+    opacity: 0;}
+
+    100%{transform: rotate(360deg);
+    opacity: 1;
+  animation-play-state: paused;}
+}
+@keyframes fadeout {
+    0%{right : -10vw;}
+    100%{opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        right : -20vw;
+        animation-play-state: paused;}
+}
+@keyframes faderest {
+  0%{opacity: 1;}
+  100%{opacity: 0;
+    visibility: hidden;
+    animation-play-state: paused;}
+}
+#fg{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-image: url('bg/fg.png');
+  background-size: contain;
+  pointer-events: none;
+  z-index: 100100;
+  transform-origin: center;
+  animation-name: fgturn;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes fgturn {
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+fieldset{
+  position: fixed;
+  display: block;
+  height: 100vh;
+  width: 20vw;
+  border: 0 solid black;
+  right: -10vw;
+  padding: 31.5vh 6vw;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}
+fieldset *{
+  color: #34271F;
+  margin: 1.5vh 0;
+  text-align: justify;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+}
+fieldset a{
+  color: #527382;
+}
+img{
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+#passrem{
+  font-size: .8vw;
+  display: inline;
+}
+#passrem input{
+  display: inline;
+  margin-left: 1vw;
+}
+#login{
+  background-color: rgba(0, 0, 0, 0);
+}
+#login button{
+  border: 0 solid black;
+  border-radius: 2px;
+  background-color: #81B8D1;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+#login button:hover{
+  color:white;
+  background-color: #34271F;
+  transform: scale(1.1);
+}
+
+::-webkit-input-placeholder {
+   color: #34271F;
+}
+#user input{
+  width: 5vw;
+  border: 0 solid black;
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+#user input:focus{
+  width: 15vw;
+}
+#pass input{
+  width: 5vw;
+  border: 0 solid black;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  transition: all .2s ease-in-out;
+}
+#pass input:focus{
+  width: 15vw;
+}
+#forgot{
+  font-size: .7vw;
+  text-align: center;
+}
+
+#lineanim{
+  position: absolute;
+  background-image: linear-gradient(to right,#34271F,#81B8D1);
+  height: .5vh;
+  width: 0vw;
+  top: 49vh;
+  left: 51vw;
+}
+#clickme:focus + #lineanim{
+  animation-name: lineani;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes lineani {
+  0%{
+    width: 0;
+  }
+  50%{
+    left: 51vw;
+    width: 32vw;
+  }
+  100%{
+    left: 83vw;
+    width: 0;
+  }
+}
+#bluehue{
+  position: fixed;
+  background-color: blue;
+  opacity: .05;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+}
+.bg{
+    position: fixed;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("bg/bg.jpg");
+    background-size: cover;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#clickme {
+  animation-name: clickmebutton;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  width: 2.5vw;
+  position: absolute;
+  margin: 45vh 48vw 0 48vw;
+  background-color: #34271F;
+  background-image: url('bg/button.png');
+  border: 0 solid black;
+  background-size: contain;
+  border-radius: 100%;
+  padding: 1.5vw;
+  cursor: pointer;
+  z-index: 10;
+}
+@keyframes clickmebutton {
+  from{transform : scale(1);}
+  to{transform : scale(1.25);}
+}
+#clickme:focus{
+opacity: 0;
+outline: none;
+cursor: default;
+}
+#clickme:hover{
+  transform: scale(1.5);
+}
+#clickme:focus ~ form #field {
+  opacity: 1;
+}
+#field:hover{
+  opacity: 1;
+}
+form #field * :focus{
+  outline: none;
+}
+#b1 img{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  margin: 0vh 25vw;
+  animation-name: rotatecc;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+}
+#b2 img{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  margin: 0vh 25vw;
+  animation-name: rotatecc;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-duration: 22s;
+}
+#b3 img{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  margin: 0vh 25vw;
+  animation-name: rotatecc;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 9s;
+}
+#b4 img{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  margin: 0vh 25vw;
+  animation-name: rotatecc;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-duration: 18s;
+}
+#b5 img{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  margin: 0vh 25vw;
+  animation-name: rotatecc;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+}
+#b6 img{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  margin: 0vh 25vw;
+  animation-name: rotatecc;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-duration: 27s;
+}
+#b7 img{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  margin: 0vh 25vw;
+  animation-name: rotatecc;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 12s;
+}
+#b8 img{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  margin: 0vh 25vw;
+  animation-name: rotatecc;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-duration: 18s;
+}
+@keyframes rotatecc {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+#error{
+  font-size: .8vw;
+  color: red;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}

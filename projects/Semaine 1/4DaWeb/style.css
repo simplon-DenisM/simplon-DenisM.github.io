@@ -1,0 +1,46 @@
+body{background-color: rgba(0, 0, 0, 0.05);}
+
+#inline{
+  font-family: sans-serif;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.2);
+  padding: 0 10px 0 10px;
+  margin-top: 0;
+}
+
+h3{
+  font-weight:lighter;
+}
+
+#dev{
+  font-size: 200%;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#web{
+  padding-left: 15px;
+  font-size: 150%;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#block{
+  display: inline-block;
+  padding: 6px;
+  vertical-align: top;
+}
+
+hr{
+  margin: 20px 16% 20px 16%;
+  background-color: lightgrey;
+  height: 1px;
+  border: 0px solid lightgrey;
+}
+
+.row{
+  margin: auto;
+  text-align: center;
+}
